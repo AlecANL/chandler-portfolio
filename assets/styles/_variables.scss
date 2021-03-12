@@ -1,0 +1,24 @@
+$devMode: false;
+
+$breakpoints: (
+  s: 320px,
+  sm: 480px,
+  m: 768px,
+  l: 1024px,
+  x: 1366px,
+  xl: 1920px,
+);
+
+:root {
+  --just-white: #fff;
+  --soft-white: #f3f3f3;
+  --dark: #172326;
+  --soft-dark: #242629;
+  --violet-dark: #a13d63;
+  --soft-purple: #7f5af0;
+  --soft-blue: #0000ff;
+  --gray: #e0e0e0;
+  --neuton-font: 'Neuton', serif;
+  --karla-font: 'Karla', sans-serif;
+  --popins-font: 'Poppins', sans-serif;
+}

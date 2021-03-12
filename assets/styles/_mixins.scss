@@ -1,0 +1,17 @@
+@import './variables';
+
+@mixin from($bp) {
+  @if (map-has-key($breakpoints, $bp)) {
+    @media screen and (min-width: map-get($breakpoints, $bp)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $bp) {
+      @content;
+    }
+  }
+}
+
+@mixin debug($color) {
+  border: 1px solid $color;
+}

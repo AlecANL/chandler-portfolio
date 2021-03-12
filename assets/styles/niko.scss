@@ -1,0 +1,163 @@
+@import './variables';
+@import './mixins';
+@import './nav';
+@import './buttons';
+
+* {
+  @if ($devMode) {
+    border: 1px solid red;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--karla-font);
+  background-color: var(--soft-white);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--neuton-font);
+}
+img {
+  max-inline-size: 100%;
+}
+.wrapper {
+  max-inline-size: 1300px;
+  margin: auto;
+}
+.header {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  border-block-end: 2px solid var(--soft-dark);
+  background-color: var(--soft-white);
+}
+.header-content {
+  margin-inline: 18px;
+  @include from(sm) {
+    padding-inline: 45px;
+  }
+
+  @include from(l) {
+    padding-inline: 170px;
+  }
+}
+
+/* Hero */
+.hero-content {
+  margin-block-start: 64px;
+  padding-block: 64px;
+  margin-inline: 18px;
+  p {
+    margin: 0;
+    font-size: 19px;
+    line-height: 27px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-block-end: 16px;
+  }
+  .project-description {
+    margin-block: 24px;
+  }
+  .project-description p {
+    margin-block-start: 4px;
+    margin-block-end: 24px;
+    color: var(--soft-blue);
+  }
+  .project-description span,
+  .project-description p {
+    text-transform: uppercase;
+  }
+  @include from(sm) {
+    padding-inline: 45px;
+  }
+  @include from(m) {
+    padding-inline: 100px;
+    h1 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  @include from(l) {
+    padding-inline: 170px;
+    padding-block: 150px;
+    p {
+      font-size: 30px;
+      line-height: 41px;
+    }
+    h1 {
+      font-size: 96px;
+      line-height: 106px;
+    }
+  }
+}
+/* Hero End */
+
+/* Main */
+.main-content {
+  text-align: center;
+  margin-inline: 18px;
+  p {
+    text-align: initial;
+    margin-block: 40px;
+    font-size: 19px;
+    line-height: 27px;
+  }
+  @include from(m) {
+    p {
+      padding-inline: 50px;
+    }
+  }
+  @include from(l) {
+    padding-inline: 170px;
+  }
+}
+/* Main End*/
+
+/* Footer */
+.footer-content {
+  margin-inline: 18px;
+  margin-block: 64px;
+  a,
+  span {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  a {
+    color: var(--soft-blue);
+  }
+  span {
+    display: inline-block;
+    padding-inline: 5px;
+  }
+  p {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  @include from(sm) {
+    padding-inline: 45px;
+  }
+  @include from(m) {
+    padding-inline: 100px;
+  }
+  @include from(l) {
+    padding-inline: 170px;
+  }
+}
+/* Footer End */
