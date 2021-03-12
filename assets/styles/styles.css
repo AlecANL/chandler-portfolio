@@ -12,41 +12,13 @@
   --popins-font: 'Poppins', sans-serif;
 }
 
-:root {
-  --just-white: #fff;
-  --soft-white: #f3f3f3;
-  --dark: #172326;
-  --soft-dark: #242629;
-  --violet-dark: #a13d63;
-  --soft-purple: #7f5af0;
-  --soft-blue: #0000ff;
-  --gray: #e0e0e0;
-  --neuton-font: 'Neuton', serif;
-  --karla-font: 'Karla', sans-serif;
-  --popins-font: 'Poppins', sans-serif;
-}
-
-:root {
-  --just-white: #fff;
-  --soft-white: #f3f3f3;
-  --dark: #172326;
-  --soft-dark: #242629;
-  --violet-dark: #a13d63;
-  --soft-purple: #7f5af0;
-  --soft-blue: #0000ff;
-  --gray: #e0e0e0;
-  --neuton-font: 'Neuton', serif;
-  --karla-font: 'Karla', sans-serif;
-  --popins-font: 'Poppins', sans-serif;
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navigation__logo {
@@ -63,18 +35,18 @@
   inset-block-start: 12%;
   inset-block-end: 0;
   -webkit-padding-before: 24px;
-          padding-block-start: 24px;
+  padding-block-start: 24px;
   -webkit-padding-start: 16px;
-          padding-inline-start: 16px;
+  padding-inline-start: 16px;
   background-color: var(--soft-white);
   -webkit-clip-path: circle(10% at 87% 87%);
-          clip-path: circle(10% at 87% 87%);
+  clip-path: circle(10% at 87% 87%);
   visibility: hidden;
 }
 
 .list__item {
   -webkit-margin-after: 16px;
-          margin-block-end: 16px;
+  margin-block-end: 16px;
 }
 
 .list__item a {
@@ -89,7 +61,7 @@
 
 .list.active {
   -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
+  clip-path: circle(75%);
   visibility: visible;
 }
 
@@ -97,7 +69,7 @@
   .list {
     position: initial;
     -webkit-clip-path: circle(100%);
-            clip-path: circle(100%);
+    clip-path: circle(100%);
     visibility: visible;
   }
   .list__item {
@@ -109,8 +81,8 @@
 .menu-icon {
   position: relative;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   inline-size: 34px;
   block-size: 34px;
 }
@@ -125,7 +97,7 @@
   position: absolute;
   inset-block-start: 50%;
   -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
+  transform: translatey(-50%);
   inline-size: 100%;
   block-size: 4px;
   background-color: var(--soft-blue);
@@ -158,34 +130,20 @@
 .line.active-menu::before {
   inset-block-start: 0;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .line.active-menu::after {
   inset-block-start: 0;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-:root {
-  --just-white: #fff;
-  --soft-white: #f3f3f3;
-  --dark: #172326;
-  --soft-dark: #242629;
-  --violet-dark: #a13d63;
-  --soft-purple: #7f5af0;
-  --soft-blue: #0000ff;
-  --gray: #e0e0e0;
-  --neuton-font: 'Neuton', serif;
-  --karla-font: 'Karla', sans-serif;
-  --popins-font: 'Poppins', sans-serif;
+  transform: rotate(-45deg);
 }
 
 .btn {
   inline-size: 100%;
   padding-block: 12px;
   -webkit-margin-after: 16px;
-          margin-block-end: 16px;
+  margin-block-end: 16px;
   font-size: 16px;
   font-weight: 700;
   border: none;
@@ -195,7 +153,7 @@
 
 .btn:active {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +173,6 @@
   border: 2px solid var(--soft-blue);
 }
 
-@use 'variables' as b;
 html {
   scroll-behavior: smooth;
 }
@@ -253,7 +210,7 @@ h3 {
   inset-inline-start: 0;
   inset-inline-end: 0;
   -webkit-border-after: 2px solid var(--soft-dark);
-          border-block-end: 2px solid var(--soft-dark);
+  border-block-end: 2px solid var(--soft-dark);
   background-color: var(--soft-white);
 }
 
@@ -282,7 +239,7 @@ h3 {
 /* Hero */
 .hero-content {
   -webkit-margin-before: 64px;
-          margin-block-start: 64px;
+  margin-block-start: 64px;
   padding-block: 64px;
   margin-inline: 18px;
 }
@@ -333,16 +290,16 @@ h3 {
 
 .projects-contenet p {
   -webkit-margin-before: 16px;
-          margin-block-start: 16px;
+  margin-block-start: 16px;
   -webkit-margin-after: 40px;
-          margin-block-end: 40px;
+  margin-block-end: 40px;
   font-size: 24px;
   font-weight: 400;
 }
 
 .projects-contenet .project {
   -webkit-margin-after: 80px;
-          margin-block-end: 80px;
+  margin-block-end: 80px;
 }
 
 @media screen and (min-width: 480px) {
@@ -430,7 +387,7 @@ h3 {
   .h-w {
     inline-size: 150px;
     -webkit-margin-end: 16px;
-            margin-inline-end: 16px;
+    margin-inline-end: 16px;
   }
 }
 
